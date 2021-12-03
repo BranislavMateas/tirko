@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Caveat";
+    src: url("../CaveatBrush-Regular.ttf") format(truetype);
+    font-display: blcok;
+}
+
+body,
+h1 {
+    font-family: "Caveat" !important;
+    /*font-family: 'Playfair Display', serif;*/
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.2em;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #de4641;
+}
+
+.btn-success {
+    background-color: #546c20 !important;
+    border: 0px !important;
+    border-radius: 0px !important;
+    font-size: 1em !important;
+}
+
+header {
+    background-image: url("../banner.jpg");
+    height: 1440px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.btn-outline-danger {
+    border-color: #de4641 !important;
+    color: #fff !important;
+}
+
+p {
+    font-family: "Caveat", serif !important;
+    color: #fff !important;
+    font-size: 1.2em !important;
+}
+
+.container {
+    height: 100% !important;
+}
