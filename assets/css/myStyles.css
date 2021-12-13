@@ -1,13 +1,17 @@
 @font-face {
     font-family: "Caveat";
     src: url("../CaveatBrush-Regular.ttf") format(truetype);
-    font-display: blcok;
+    font-display: swap;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 body,
 h1 {
     font-family: "Caveat" !important;
-    /*font-family: 'Playfair Display', serif;*/
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -19,31 +23,47 @@ h1 {
     background-color: #de4641;
 }
 
-.btn-success {
-    background-color: #546c20 !important;
-    border: 0px !important;
-    border-radius: 0px !important;
-    font-size: 1em !important;
+.navbar-light .navbar-nav .nav-link.active {
+    background-color: #de4641;
 }
 
-header {
+.bg-image-banner {
+    position: relative;
     background-image: url("../banner.jpg");
-    height: 1440px !important;
     background-size: contain;
     background-repeat: no-repeat;
+    height: 1440px;
 }
 
-.btn-outline-danger {
-    border-color: #de4641 !important;
-    color: #fff !important;
+.bg-dark {
+    background-color: #212529b5 !important;
+}
+
+.btn-success {
+    background-color: #546c20;
+    font-size: 1.2em;
+}
+
+.motto {
+    font-size: 3.4em;
 }
 
 p {
-    font-family: "Caveat", serif !important;
-    color: #fff !important;
-    font-size: 1.2em !important;
+    font-family: "Playfair Display", serif;
+    font-display: swap;
+    color: #fff;
+    font-size: 1.35em !important;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 36px 0px;
 }
 
-.container {
-    height: 100% !important;
+.btn-outline-danger {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #fff;
+    border-color: #de4641;
+    margin-left: 33%;
+    margin-right: auto;
 }
