@@ -7,7 +7,7 @@
 ?>
 
 <?php
-    include_once "./vendor/onas.php";
+    include_once "./onas.php";
 ?>
 
 <?php

@@ -29,8 +29,8 @@
     </nav>
                         
     <div class="container" id="header-content">
-        <h1 class="motto"><span style="color:#DE4642">ZENIT </span><span style="color:#617F20">FITNESS</span></h1>
-            <p>
+        <h1 id="motto"><span style="color:#DE4642">ZENIT </span><span style="color:#617F20">FITNESS</span></h1>
+            <p id="motto-secondary">
                 "Starajte sa o svoje telo. Je to jediné miesto, kde musíte žiť."<br>(Jim Rohn)
             </p>
         

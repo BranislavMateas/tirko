@@ -6,11 +6,11 @@
 
 html,
 body {
-    height: 100% !important;
+    height: 100%;
+    font-family: "Playfair Display", serif !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    font-family: "Playfair Display", serif;
     color: #fff !important;
     font-size: 1.15em;
 }
@@ -37,18 +37,16 @@ body {
 }
 
 .btn-success {
-    font-family: "Playfair Display", serif;
     background-color: #546c20;
     font-size: 1em;
 }
 
-.motto {
-    font-family: "Playfair Display", serif;
+#motto {
     font-weight: 600;
     font-size: 3.4em;
 }
 
-p {
+#motto-secondary {
     font-family: "Caveat", sans-serif;
     color: #fff;
     font-size: 1.85em;
@@ -58,7 +56,6 @@ p {
 }
 
 .btn-outline-danger {
-    font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 1.25em;
     color: #fff;
@@ -72,4 +69,35 @@ p {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.title {
+    font-weight: 600;
+}
+
+.description {
+    font-size: 1.1em;
+}
+
+table {
+    font-size: 1.1em;
+}
+
+th {
+    white-space: break-spaces;
+}
+
+#otvaracie-hodiny {
+    margin: 0 auto;
+    width: 33%;
+}
+
+#otvaracie-hodiny td {
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-bottom: 64px;
+}
+
+#otvaracie-hodiny tr th:last-child {
+    text-align: center;
 }

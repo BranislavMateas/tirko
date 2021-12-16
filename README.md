@@ -1,3 +1,3 @@
-# tirko
+# Tirko
 
-### Si to stiahnite, krásny dníček, postupne to budem updatovať a opravovať zrejme
+### Toto je stránka vytvorená podľa predlohy z predmetu TIR napísaná Branislavom Mateášom

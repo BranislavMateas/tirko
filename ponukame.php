@@ -1,13 +1,3 @@
-<?php
-    include_once "./vendor/header.php";
-?>
+<section id="ponukame" class="pt-5">
 
-<?php
-    include_once "./vendor/menu.php";
-?>
-
-Ponúkame
-
-<?php
-    include_once "./vendor/footer.php";
-?>
+</section>
