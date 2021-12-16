@@ -6,7 +6,9 @@
     include_once "./vendor/menu.php";
 ?>
 
-Homepage
+<?php
+    include_once "./vendor/onas.php";
+?>
 
 <?php
     include_once "./vendor/footer.php";

@@ -1,22 +1,18 @@
 @font-face {
     font-family: "Caveat";
-    src: url("../CaveatBrush-Regular.ttf") format(truetype);
+    src: url("../CaveatBrush-Regular.ttf") format("truetype");
     font-display: swap;
 }
 
 html,
 body {
-    height: 100%;
-}
-
-body,
-h1 {
-    font-family: "Caveat" !important;
+    height: 100% !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
+    font-family: "Playfair Display", serif;
     color: #fff !important;
-    font-size: 1.2em;
+    font-size: 1.15em;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -30,40 +26,50 @@ h1 {
 .bg-image-banner {
     position: relative;
     background-image: url("../banner.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-position: top center;
     background-repeat: no-repeat;
-    height: 1440px;
+    height: 100vh;
 }
 
 .bg-dark {
-    background-color: #212529b5 !important;
+    background-color: #212529b2 !important;
 }
 
 .btn-success {
+    font-family: "Playfair Display", serif;
     background-color: #546c20;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .motto {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
     font-size: 3.4em;
 }
 
 p {
-    font-family: "Playfair Display", serif;
-    font-display: swap;
+    font-family: "Caveat", sans-serif;
     color: #fff;
-    font-size: 1.35em !important;
-    font-weight: 700;
+    font-size: 1.85em;
+    font-weight: 500;
     letter-spacing: 0.02em;
-    padding: 36px 0px;
+    padding: 40px 0px;
 }
 
 .btn-outline-danger {
     font-family: "Playfair Display", serif;
-    font-weight: 600;
-    font-size: 1.1em;
+    font-weight: 700;
+    font-size: 1.25em;
     color: #fff;
     border-color: #de4641;
-    margin-left: 33%;
+    border-radius: 8px;
+    margin-left: 13%;
     margin-right: auto;
+}
+
+#header-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
