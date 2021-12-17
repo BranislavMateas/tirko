@@ -11,6 +11,10 @@
 ?>
 
 <?php
+    include_once "./ponukame.php";
+?>
+
+<?php
     include_once "./vendor/footer.php";
 ?>
 
