@@ -16,7 +16,7 @@
                         for ($i=0; $i < count($menu); $i++) {
                     ?>
                         <li class="nav-item">
-                            <a class="nav-link py-3 px-2 <?php echo $aktivnaStranka == explode("::",  $menu[$i])[0]?"active":""?>" href="<?php echo explode("::",  $menu[$i])[0] . '.php' ?>"><?php echo explode("::",  $menu[$i])[1] ?></a>
+                            <a class="nav-link py-3 px-2 <?php echo $aktivnaStranka == explode("::",  $menu[$i])[0]?"active":""?>" href="#<?php echo explode("::",  $menu[$i])[0] ?>"><?php echo explode("::",  $menu[$i])[1] ?></a>
                         </li>
                     <?php
                         }
