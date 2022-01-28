@@ -1,10 +1,10 @@
 <?php
-  $menu = file("./assets/menu.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+  $menu = file(dirname(__FILE__) . "/menu.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
   $aktivnaStranka = basename($_SERVER['PHP_SELF'], ".php");
 ?>
 
-<header class="bg-image-banner">
-    <nav class="navbar navbar-expand-md navbar-light bg-dark py-0 opacity-50">
+<header class="bg-image-banner" id="index">
+    <nav class="navbar navbar-expand-md navbar-light bg-dark py-0 opacity-50 sticky">
         <div class="container">
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -37,3 +37,10 @@
         <button class="btn btn-outline-danger py-3 px-5">Prihlásiť</button>
     </div>
 </header>
+
+<script type="text/javascript">
+  window.addEventListener('hashchange', function(){
+    document.querySelector('.active').classList.remove('active');
+    document.querySelector('[href="'+window.location.hash+'"]').classList.add('active');
+  });
+</script>

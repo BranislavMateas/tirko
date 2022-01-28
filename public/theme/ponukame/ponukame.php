@@ -1,6 +1,7 @@
 <?php
-    $ponuka = file("./assets/ponuka.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $ponuka = file(dirname(__FILE__) . "/ponuka.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 ?>
+
 
 <section id="ponukame">
     <div class="container">
@@ -27,7 +28,7 @@
                 ?>
 
                         <div class="carousel-item <?php if ($i == 0) echo 'active'?>">
-                            <img src="./assets/carousel/<?php echo $fotka ?>" class="pull-left" alt="<?php echo explode(".", $fotka)[0] ?>">
+                            <img src="./ponukame/images/<?php echo $fotka ?>" class="pull-left" alt="<?php echo explode(".", $fotka)[0] ?>">
                             <div class="carousel-caption">
                                 <h5><?php echo $nadpis ?></h5>
                                 <p class="description"><?php echo $popis ?></p>
