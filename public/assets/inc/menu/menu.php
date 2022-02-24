@@ -1,6 +1,11 @@
 <?php
-  $menu = file(dirname(__FILE__) . "/menu.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-  $aktivnaStranka = basename($_SERVER['PHP_SELF'], ".php");
+  $riadky = file(dirname(__FILE__) . "/menu.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+  $aktivnaStranka = basename(dirname($_SERVER['SCRIPT_NAME']));
+  
+  foreach ($riadky as $klus => $hodnota){
+    list($k,$h) = explode('::',$hodnota);
+    $menu[$k]=$h;
+  }
 ?>
 
 <header class="bg-image-banner" id="index">
@@ -13,10 +18,10 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <?php
-                        for ($i=0; $i < count($menu); $i++) {
+                        foreach($menu as $odkaz => $nazov) { 
                     ?>
                         <li class="nav-item">
-                            <a class="nav-link py-3 px-2 <?php echo $aktivnaStranka == explode("::",  $menu[$i])[0]?"active":""?>" href="#<?php echo explode("::",  $menu[$i])[0] ?>"><?php echo explode("::",  $menu[$i])[1] ?></a>
+                            <a class="nav-link py-3 px-2 <?php echo $aktivnaStranka == $odkaz?"active":""?>" href="../<?php echo $odkaz ?>"><?php echo $nazov ?></a>
                         </li>
                     <?php
                         }
@@ -37,10 +42,4 @@
         <button class="btn btn-outline-danger py-3 px-5">Prihlásiť</button>
     </div>
 </header>
-
-<script type="text/javascript">
-  window.addEventListener('hashchange', function(){
-    document.querySelector('.active').classList.remove('active');
-    document.querySelector('[href="'+window.location.hash+'"]').classList.add('active');
-  });
 </script>
